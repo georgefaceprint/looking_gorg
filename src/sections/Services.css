@@ -39,13 +39,15 @@
 
 .service-card {
     background: var(--white);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--secondary);
+    padding: 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(200, 179, 166, 0.2);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    /* Center content for circular crop look */
+    text-align: center;
     box-shadow: var(--shadow-sm);
 }
 
@@ -53,6 +55,22 @@
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-light);
+}
+
+.service-image-crop {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 4px solid var(--secondary-light);
+    box-shadow: var(--shadow-md);
+}
+
+.service-image-crop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service-card h3 {

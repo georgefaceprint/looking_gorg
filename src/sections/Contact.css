@@ -1,9 +1,9 @@
 .contact {
-    padding: 6rem 2rem 2rem;
+    padding: 8rem 2rem 4rem;
     max-width: var(--max-width);
     margin: 0 auto;
     background: var(--secondary-light);
-    border-radius: 40px 40px 0 0;
+    border-radius: 60px 60px 0 0;
 }
 
 .locations-grid {
@@ -57,12 +57,14 @@
 }
 
 .btn-loc {
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 50px;
     background: var(--accent);
     color: var(--white);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: var(--transition);
 }
 

@@ -2,11 +2,36 @@ import React from 'react';
 import './Services.css';
 
 const services = [
-    { name: 'Wig Treatment', regular: 'R350', special: 'R250' },
-    { name: 'Wig Installation', regular: 'R400', special: 'R300' },
-    { name: 'Installation + Styling', regular: 'R650', special: 'R450' },
-    { name: 'Straightening', regular: 'R150', special: null },
-    { name: 'Frontal Pony Installation', regular: 'R850', special: 'R650' },
+    {
+        name: 'Wig Treatment',
+        regular: 'R350',
+        special: 'R250',
+        image: '/wig_treatment_service_premium.png'
+    },
+    {
+        name: 'Wig Installation',
+        regular: 'R400',
+        special: 'R300',
+        image: '/wig_installation_process_premium.png'
+    },
+    {
+        name: 'Installation + Styling',
+        regular: 'R650',
+        special: 'R450',
+        image: '/hero_hair_salon_premium_black_woman.png' // Reusing high-quality asset
+    },
+    {
+        name: 'Straightening',
+        regular: 'R150',
+        special: null,
+        image: '/wig_treatment_service_premium.png' // Fallback
+    },
+    {
+        name: 'Frontal Pony Installation',
+        regular: 'R850',
+        special: 'R650',
+        image: '/wig_installation_process_premium.png' // Fallback
+    },
 ];
 
 const Services = () => {
@@ -21,6 +46,9 @@ const Services = () => {
             <div className="services-grid">
                 {services.map((service, index) => (
                     <div className="service-card" key={index}>
+                        <div className="service-image-crop">
+                            <img src={service.image} alt={service.name} />
+                        </div>
                         <div className="service-info">
                             <h3>{service.name}</h3>
                         </div>

@@ -14,7 +14,11 @@ const Hero = () => {
                 </div>
             </div>
             <div className="hero-image-container">
-                {/* Placeholder for premium hair imagery */}
+                <img
+                    src="/hero_hair_salon_premium_black_woman.png"
+                    alt="Premium Hair Salon"
+                    className="hero-main-img"
+                />
                 <div className="hero-image-overlay"></div>
             </div>
         </section>
