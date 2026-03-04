@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Hero from './sections/Hero'
+import HeroScroller from './sections/HeroScroller'
+import Shop from './sections/Shop'
 import Services from './sections/Services'
 import Contact from './sections/Contact'
 import './App.css'
@@ -10,8 +11,9 @@ function App() {
     <div className="app-container">
       <Navbar />
       <main>
-        <Hero />
+        <HeroScroller />
         <Services />
+        <Shop />
         <Contact />
       </main>
     </div>

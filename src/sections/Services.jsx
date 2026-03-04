@@ -18,7 +18,7 @@ const services = [
         name: 'Installation + Styling',
         regular: 'R650',
         special: 'R450',
-        image: '/hero_hair_salon_premium_black_woman.png' // Reusing high-quality asset
+        image: '/hero_1.png'
     },
     {
         name: 'Straightening',
