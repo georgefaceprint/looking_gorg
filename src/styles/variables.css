@@ -1,0 +1,63 @@
+:root {
+  /* Premium Salon Palette */
+  --primary: #C5A059;       /* Gold/Bronze */
+  --primary-light: #E0C18E;
+  --primary-dark: #A6823F;
+  
+  --secondary: #F5E6D3;     /* Cream/Sand */
+  --secondary-light: #FAF3EA;
+  
+  --accent: #2C2C2C;        /* Deep Charcoal/Mocha */
+  --accent-light: #4A4A4A;
+  
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 80px;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--white);
+  color: var(--accent);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
